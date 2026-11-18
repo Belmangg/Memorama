@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Memorama</title>
+
+    <!-- Manifest -->
+    <link rel="manifest" href="./manifest.json">
+
+    <!-- Iconos y CSS -->
+    <link rel="stylesheet" href="./style.css">
+    <link rel="icon" href="./icon-192.png">
+</head>
+<body>
+    <div class="container">
+        <h1>🎮 Memorama 🧠</h1>
+
+        <div class="stats">
+            <div class="stat-box">⏱️ <span id="timer">00:00</span></div>
+            <div class="stat-box">🏆 <span id="bestTime">--:--</span></div>
+        </div>
+
+        <div class="grid" id="gameBoard"></div>
+
+        <div class="actions">
+            <button id="btnRestart" class="btn btn-secondary" onclick="setupGame()">🔄 Reiniciar Partida</button>
+            <button id="btnInstall" class="btn btn-install" style="display: none;">📲 Instalar App</button>
+        </div>
+    </div>
+
+    <script src="./app.js"></script>
+</body>
+</html>
